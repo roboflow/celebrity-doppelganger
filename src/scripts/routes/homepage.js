@@ -21,5 +21,10 @@ module.exports = function(state) {
                 $('#loadingContainer').addClass("hidden");
             }
         };
+
+        $('#photoForm').submit(function() {
+            setLoading(true);
+            return false;
+        });
     }
 };
