@@ -33,4 +33,10 @@ app.get("/query/ping", function (req, res) {
     });
 });
 
+app.post("/query/photo", function(req, res) {
+    res.status(200).json({
+        image: req.body.image
+    });
+});
+
 exports.app = app;

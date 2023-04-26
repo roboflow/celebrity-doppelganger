@@ -38,7 +38,9 @@ module.exports = function(state) {
 
             loadImage(file, function(img, data) {
                 var base64 = img.toDataURL("image/jpeg");
-                debugger;
+                $.post("/query/photo", {
+                    image: base64
+                }, "JSON");
              }, {
                 maxWidth: 1024,
                 maxHeight: 1024,

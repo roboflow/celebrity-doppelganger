@@ -12,13 +12,13 @@
     ],
     "rewrites": [
       {
-        "source": "python/**",
+        "source": "/python/**",
         "run": {
           "serviceId": "doppelganger-python"
         }
       },
       {
-        "source": "query/**",
+        "source": "/query/**",
         "function": "dynamic"
       },
       {
