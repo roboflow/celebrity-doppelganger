@@ -34,8 +34,16 @@ app.get("/query/ping", function (req, res) {
 });
 
 app.post("/query/photo", function(req, res) {
+    // upload image
+
+    // poll until there are CLIP vectors
+
+    // hit search API
+
+    // return best result
     res.status(200).json({
-        image: req.body.image
+        image: req.body.image,
+        env: process.env
     });
 });
 

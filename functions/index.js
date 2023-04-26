@@ -7,9 +7,10 @@ admin.initializeApp();
 
 exports.dynamic = functions
     .runWith({
-        // secrets: [
-        //     "ROBOFLOW_KEY",
-        //     "ROBOFLOW_PUBLISHABLE"
-        // ]
+        secrets: [
+            "ROBOFLOW_KEY",
+            "ROBOFLOW_WORKSPACE_ID",
+            "ROBOFLOW_WORKSPACE_NAME"
+        ]
     })
     .https.onRequest(require('./dynamic.js').app);

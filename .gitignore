@@ -1,5 +1,6 @@
 secrets
 secrets/*
+functions/.secret.local
 
 dist/*.css
 dist/*.js
