@@ -57,11 +57,6 @@ $(function () {
         }
     });
 
-    var apiKey = _.getItem("magic-scissors-api-key");
-    if(apiKey) {
-        state.apiKey = apiKey;
-    }
-
     var loading = function(ctx, next) {
         $('body').html(require("../templates/loading.hbs")());
         setTimeout(function() {
@@ -70,11 +65,6 @@ $(function () {
     };
 
     page("/", require(__dirname + "/routes/homepage.js")(state));
-    page("/choose-project", loading, require(__dirname + "/routes/choose-project.js")(state));
-    page("/choose-backgrounds", loading, require(__dirname + "/routes/choose-backgrounds.js")(state));
-    page("/choose-destination", loading, require(__dirname + "/routes/choose-destination.js")(state));
-    page("/output-settings", require(__dirname + "/routes/output-settings.js")(state));
-    page("/generate-dataset", loading, require(__dirname + "/routes/generate-dataset.js")(state));
 
     page.start();
 });
