@@ -14,7 +14,7 @@
       {
         "source": "python/**",
         "run": {
-          "serviceId": "magicscissors-python"
+          "serviceId": "doppelganger-python"
         }
       },
       {

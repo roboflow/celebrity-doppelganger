@@ -1,5 +1,5 @@
 {
-    "name": "magic-scissors",
+    "name": "celebrity-doppelganger",
     "private": true,
     "version": "1.0.0",
     "description": "",
@@ -50,12 +50,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/roboflow/magic-scissors.git"
+        "url": "git+https://github.com/roboflow/celebrity-doppelganger.git"
     },
     "author": "Roboflow",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/roboflow/magic-scissors/issues"
+        "url": "https://github.com/roboflow/celebrity-doppelganger/issues"
     },
-    "homepage": "https://github.com/roboflow/magic-scissors#readme"
+    "homepage": "https://github.com/roboflow/celebrity-doppelganger#readme"
 }
